@@ -1,4 +1,4 @@
-# UI
+# @scode/ui-vue
 
 优先实现 Table Grid 所需要的组件
 
@@ -17,3 +17,4 @@
 + [ ] Radio
 
 + [ ] Tooltip
+

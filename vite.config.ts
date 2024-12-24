@@ -12,7 +12,7 @@ export default defineConfig({
       include: [
         "src/**/*.vue",
         "example/vue/**/*.vue",
-        "packages/table-grid-vue/**/*.vue",
+        "packages/ui-vue/**/*.vue",
       ],
     }),
     react({
@@ -27,7 +27,7 @@ export default defineConfig({
   },
 
   server: {
-    port: 4001,
+    port: 4002,
   },
 
   build: {
