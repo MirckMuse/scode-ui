@@ -1,4 +1,6 @@
-import type { App, Plugin } from "vue";
+import type { App } from "vue";
+import type { WithPlugin } from "../typing"
+
 import Loading from "./Loading.vue";
 import { Override, type IOverride } from "./override";
 
@@ -9,9 +11,6 @@ Loading['install'] = function (app: App) {
 
 Loading["override"] = Override;
 
-type LoadingComponent = typeof Loading & Plugin & { override: Partial<IOverride> };
-
-
 // TODO: 通过脚本开启loading
 
-export default Loading as LoadingComponent;
+export default Loading as WithPlugin<typeof Loading> & { override: Partial<IOverride> };

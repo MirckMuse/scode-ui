@@ -1,8 +1,10 @@
 <script lang="ts">
 import type { LoadingProps } from './typing';
 import { useOverride } from "./override";
-import { defineComponent, h, type VNode } from 'vue';
+import { defineComponent, h, type VNode, defineProps } from 'vue';
 import { isNil } from 'es-toolkit';
+
+defineProps<LoadingProps>();
 
 function _render(target?: Function | VNode | string | number) {
   if (isNil(target)) {

@@ -7,6 +7,7 @@
 + [ ] Loading
 + [ ] Result
 + [ ] Pagination
++ [ ] Select
 
 + [ ] Dropdown
 + [ ] Tree
